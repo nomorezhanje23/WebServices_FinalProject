@@ -1,5 +1,5 @@
 {
-  "name": "project7indivigual",
+  "name": "WebServices_FinalProject",
   "version": "1.0.0",
   "description": "cultural legacy application",
   "main": "server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jacall2016/cse341project7indivigual.git"
+    "url": "git+https://github.com/nomorezhanje23/WebServices_FinalProject.git"
   },
   "author": "James Call",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jacall2016/cse341project7indivigual/issues"
+    "url": "https://github.com/nomorezhanje23/WebServices_FinalProject/issues"
   },
-  "homepage": "https://github.com/jacall2016/cse341project7indivigual#readme",
+  "homepage": "https://github.com/nomorezhanje23/WebServices_FinalProject#readme",
   "dependencies": {
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
