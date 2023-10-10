@@ -1,0 +1,35 @@
+{
+  "name": "project7indivigual",
+  "version": "1.0.0",
+  "description": "cultural legacy application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacall2016/cse341project7indivigual.git"
+  },
+  "author": "James Call",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacall2016/cse341project7indivigual/issues"
+  },
+  "homepage": "https://github.com/jacall2016/cse341project7indivigual#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "express-validator": "^7.0.1",
+    "mongodb": "^6.1.0",
+    "passport": "^0.6.0",
+    "passport-github2": "^0.1.12",
+    "swagger-autogen": "^2.23.6",
+    "swagger-ui-express": "^5.0.0",
+    "validatejs": "^0.0.2",
+    "validatorjs": "^3.22.1"
+  }
+}
