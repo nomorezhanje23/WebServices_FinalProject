@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Api",
-    "description": "Api",
+    "title": "cultural Api",
+    "description": "cultural Api",
     "version": "1.0.0"
   },
   "host": "localHost:3000",
@@ -277,7 +277,7 @@
                 "resources": {
                   "example": "any"
                 },
-                "support_organizations": {
+                "support_orginizations": {
                   "example": "any"
                 },
                 "suggested_actions": {
@@ -365,7 +365,7 @@
                 "resources": {
                   "example": "any"
                 },
-                "support_organizations": {
+                "support_orginizations": {
                   "example": "any"
                 },
                 "suggested_actions": {
@@ -467,10 +467,10 @@
                 "serving_and_presentation": {
                   "example": "any"
                 },
-                "variations": {
+                "taste_profile": {
                   "example": "any"
                 },
-                "taste_profile": {
+                "variations": {
                   "example": "any"
                 }
               }
@@ -555,10 +555,10 @@
                 "serving_and_presentation": {
                   "example": "any"
                 },
-                "variations": {
+                "taste_profile": {
                   "example": "any"
                 },
-                "taste_profile": {
+                "variations": {
                   "example": "any"
                 }
               }
@@ -817,6 +817,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
