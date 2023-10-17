@@ -99,7 +99,7 @@ const deleteCultural = async (req, res) => {
         res.status(400).json('Must use a valid culturals id to delete a cultural')
     }
     const culturalId = new ObjectId(req.params.id);
-    const response = await mongodb.getDatabase().db().collection('culturals').deleteOne({ _id: culturalId });
+    const response = await mongodb.getDatabase().db().collection('cultural').deleteOne({ _id: culturalId });
     if (response.deletedCount > 0) {
         res.status(204).send();
     } else {

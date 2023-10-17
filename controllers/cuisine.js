@@ -123,7 +123,7 @@ const deleteCuisine = async (req, res) => {
     // Convert the request parameter to a valid ObjectId
     const cuisineId = new ObjectId(req.params.id);
     // Delete the cuisine entry with the specified ID from the database
-    const response = await mongodb.getDatabase().db().collection('cuisines').deleteOne({ _id: cuisineId });
+    const response = await mongodb.getDatabase().db().collection('cuisine').deleteOne({ _id: cuisineId });
     if (response.deletedCount > 0) {
         // If deletion is successful, send a 204 No Content response
         res.status(204).send();
