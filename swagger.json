@@ -5,10 +5,9 @@
     "description": "cultural Api",
     "version": "1.0.0"
   },
-  "host": "localHost:3000",
+  "host": "cse341-team-final-project.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {

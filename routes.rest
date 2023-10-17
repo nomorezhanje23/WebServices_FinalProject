@@ -123,7 +123,14 @@ POST http://localhost:3000/cultural HTTP/1.1
 Content-Type: application/json
 
 {
-    
+  "name":"american",
+  "languages":[{"name":"english",
+                "dilects":["southern"]}],
+  "beliefs":["democracy"],
+  "history":"founded in 1776",
+  "notable_figures":[{"name":"George Washington",
+                      "accomplishments":["first president"]}],
+  "historic_lands":[{"name":"united states"}]
 }
 
 ### PUT cultural
@@ -149,7 +156,16 @@ POST http://localhost:3000/historical_sites_and_artifacts HTTP/1.1
 Content-Type: application/json
 
 {
-    
+  "sight_name":"Chichén Itzá",
+  "sight_latitude":"20.6843",
+  "sight_longitde":"88.5678",
+  "sight_description":"massive step pyramid",
+  "sight_visiting_information":"9am - 9pm",
+  "sight_archaeological_findings":[{"designation":"pot12",
+                                    "loction":"north west sector",
+                                    "desciption":"engraved pot",
+                                    "piriod_epoch":"600 AD - 1200 AD",
+                                    "Preservation_status":"poor"}]
 }
 
 ### PUT historical_sites_and_artifacts
@@ -157,7 +173,16 @@ PUT http://localhost:3000/historical_sites_and_artifacts/65188ab2d49146395a85064
 Content-Type: application/json
 
 {
-   
+  "sight_name":"Chichén Itzá",
+  "sight_latitude":"20.6843",
+  "sight_longitde":"88.5678",
+  "sight_description":"massive step pyramid",
+  "sight_visiting_information":"9am - 9pm",
+  "sight_archaeological_findings":[{"designation":"pot12",
+                                    "loction":"north west sector",
+                                    "desciption":"engraved pot",
+                                    "piriod_epoch":"600 AD - 1200 AD",
+                                    "Preservation_status":"poor"}]
 }
 
 
@@ -175,7 +200,20 @@ POST http://localhost:3000/stories_and_myths HTTP/1.1
 Content-Type: application/json
 
 {
-    
+  "title":"Popo Vuh",
+  "origin":"mayans of the Yucatán Peninsula of Mexico from",
+  "synopsis":"creation and hero twins victory over the lords of Xubalba",
+  "moral_teachings":["ansestoral importance","Humans are created by the gods","deviotion to passion","devotion to courage","devotion to the natural world"],
+  "characters":[{"character_name":"Ixbalaqué",
+                 "character_description":"hero twin devoted to taking down characters who magnify themselves, very strong and physically powerful"}],
+  "variations":[{"title":"The Secret of the Hunchback",
+  "origin":"2012",
+  "synopsis":"combines adventure fantasy and elements of Mayan foklore",
+  "moral_teachings":["courage and perserverance"],
+  "characters":[{"character_name":"Leo San Juan",
+                "character_description":" The central protagonist of the story, Leo is a young boy who discovers the magical medallion, which grants him extraordinary powers. Throughout the film, Leo exhibits courage, determination, and a strong sense of responsibility as he navigates the challenges posed by the dark forces pursuing the medallion."}],
+                "sources":["source info"]}],
+  "sources":["source info"]
 }
 
 ### PUT stories_and_myths

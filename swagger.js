@@ -3,8 +3,8 @@ const swaggerAutogen = require('swagger-autogen')();
 // Define the basic information for the API documentation
 const doc = {
     info: {
-        title: 'cultural Api',
-        description: 'cultural Api'
+        title: 'culturalLegacy Api',
+        description: 'culturalLegacy Api'
     },
     host: 'localHost:3000',            // The hostname and port where the API is hosted
     schemes: ['http', 'https']         // The communication protocols (HTTP and HTTPS) supported by the API

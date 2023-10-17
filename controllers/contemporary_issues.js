@@ -121,7 +121,7 @@ const deleteContemporary_issues = async (req, res) => {
     // Convert the request parameter to a valid ObjectId
     const contemporary_issuesId = new ObjectId(req.params.id);
     // Delete the contemporary issue from the database
-    const response = await mongodb.getDatabase().db().collection('contemporary_issuess').deleteOne({ _id: contemporary_issuesId });
+    const response = await mongodb.getDatabase().db().collection('contemporary_issues').deleteOne({ _id: contemporary_issuesId });
     if (response.deletedCount > 0) {
         // If deletion is successful, send a 204 No Content response
         res.status(204).send();

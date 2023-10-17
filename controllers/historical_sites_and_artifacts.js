@@ -142,7 +142,7 @@ const deleteHistorical_sites_and_artifacts = async (req, res) => {
     const historical_sites_and_artifactsId = new ObjectId(req.params.id);
     
     // Use MongoDB to delete the historical site and artifact document by ID
-    const response = await mongodb.getDatabase().db().collection('historical_sites_and_artifactss').deleteOne({ _id: historical_sites_and_artifactsId });
+    const response = await mongodb.getDatabase().db().collection('historical_sites_and_artifacts').deleteOne({ _id: historical_sites_and_artifactsId });
     
     // Check if the document was deleted
     if (response.deletedCount > 0) {
