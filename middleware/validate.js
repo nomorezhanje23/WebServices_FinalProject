@@ -115,7 +115,7 @@ const saveCultural = (req, res, next) => {
         notable_figures: 'required|array',
         'notable_figures.*.name': 'required|string',
         'notable_figures.*.accomplishments': 'required|array',
-        'notable_figures.*.accomplishments.*.accomplishment': 'required|string',
+        'notable_figures.*.accomplishments.*': required|string,
         historic_lands: 'required|array',
         'historic_lands.*.name': 'required|string'
     };
