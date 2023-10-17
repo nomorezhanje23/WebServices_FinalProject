@@ -147,7 +147,7 @@ const deleteStories_and_myths = async (req, res) => {
     const stories_and_mythsId = new ObjectId(req.params.id);
 
     // Use 'await' to asynchronously delete the document with the specified '_id'
-    const response = await mongodb.getDatabase().db().collection('stories_and_mythss').deleteOne({ _id: stories_and_mythsId });
+    const response = await mongodb.getDatabase().db().collection('stories_and_myths').deleteOne({ _id: stories_and_mythsId });
 
     // Check if any documents were deleted during the operation
     if (response.deletedCount > 0) {

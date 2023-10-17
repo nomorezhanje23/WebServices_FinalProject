@@ -121,7 +121,7 @@ const deleteClothing = async (req, res) => {
     // Convert the request parameter to a valid ObjectId
     const clothingId = new ObjectId(req.params.id);
     // Delete the clothing item with the specified ID from the 'clothings' collection
-    const response = await mongodb.getDatabase().db().collection('clothings').deleteOne({ _id: clothingId });
+    const response = await mongodb.getDatabase().db().collection('clothing').deleteOne({ _id: clothingId });
     if (response.deletedCount > 0) {
         // If successful, send a 204 No Content response
         res.status(204).send();
