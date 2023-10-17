@@ -117,16 +117,7 @@ const saveCultural = (req, res, next) => {
         'notable_figures.*.accomplishments': 'required|array',
         'notable_figures.*.accomplishments.*.accomplishment': 'required|string',
         historic_lands: 'required|array',
-        'historic_lands.*.name': 'required|string',
-        'historic_lands.*.area': 'required|array',
-        'historic_lands.*.area.*.northCoordinate_longitude': 'required|string',
-        'historic_lands.*.area.*.northCoordinate_latitude': 'required|string',
-        'historic_lands.*.area.*.southCoordinate_longitude': 'required|string',
-        'historic_lands.*.area.*.southCoordinate_latitude': 'required|string',
-        'historic_lands.*.area.*.eastCoordinate_longitude': 'required|string',
-        'historic_lands.*.area.*.eastCoordinate_latitude': 'required|string',
-        'historic_lands.*.area.*.westCoordinate_longitude': 'required|string',
-        'historic_lands.*.area.*.westCoordinate_latitude': 'required|string'
+        'historic_lands.*.name': 'required|string'
     };
 
     // Use the validator function to check if the request body complies with the defined rules
