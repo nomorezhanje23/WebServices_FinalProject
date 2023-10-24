@@ -115,18 +115,9 @@ const saveCultural = (req, res, next) => {
         notable_figures: 'required|array',
         'notable_figures.*.name': 'required|string',
         'notable_figures.*.accomplishments': 'required|array',
-        'notable_figures.*.accomplishments.*.accomplishment': 'required|string',
+        'notable_figures.*.accomplishments.*': required|string,
         historic_lands: 'required|array',
-        'historic_lands.*.name': 'required|string',
-        'historic_lands.*.area': 'required|array',
-        'historic_lands.*.area.*.northCoordinate_longitude': 'required|string',
-        'historic_lands.*.area.*.northCoordinate_latitude': 'required|string',
-        'historic_lands.*.area.*.southCoordinate_longitude': 'required|string',
-        'historic_lands.*.area.*.southCoordinate_latitude': 'required|string',
-        'historic_lands.*.area.*.eastCoordinate_longitude': 'required|string',
-        'historic_lands.*.area.*.eastCoordinate_latitude': 'required|string',
-        'historic_lands.*.area.*.westCoordinate_longitude': 'required|string',
-        'historic_lands.*.area.*.westCoordinate_latitude': 'required|string'
+        'historic_lands.*.name': 'required|string'
     };
 
     // Use the validator function to check if the request body complies with the defined rules
@@ -200,6 +191,8 @@ const saveStories_and_myths = (req, res, next) => {
         characters: 'required|array',
         'characters.*.character_name': 'required|string',
         'characters.*.character_description': 'required|string',
+        sources: 'required|array',
+        'sources.*': 'required|string',
         variations: 'required|array',
         'variations.*.title': 'required|string',
         'variations.*.origin': 'required|string',
@@ -211,8 +204,6 @@ const saveStories_and_myths = (req, res, next) => {
         'variations.*.characters.*.character_description': 'required|string',
         'variations.*.sources': 'required|array',
         'variations.*.sources.*': 'required|string',
-        sources: 'required|array',
-        'sources.*': 'required|string'
     };
 
     // Use the validator function to check if the request body complies with the defined rules
