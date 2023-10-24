@@ -206,14 +206,14 @@ Content-Type: application/json
   "moral_teachings":["ansestoral importance","Humans are created by the gods","deviotion to passion","devotion to courage","devotion to the natural world"],
   "characters":[{"character_name":"Ixbalaqué",
                  "character_description":"hero twin devoted to taking down characters who magnify themselves, very strong and physically powerful"}],
+  "sources":["source info"],
   "variations":[{"title":"The Secret of the Hunchback",
-  "origin":"2012",
-  "synopsis":"combines adventure fantasy and elements of Mayan foklore",
-  "moral_teachings":["courage and perserverance"],
-  "characters":[{"character_name":"Leo San Juan",
-                "character_description":" The central protagonist of the story, Leo is a young boy who discovers the magical medallion, which grants him extraordinary powers. Throughout the film, Leo exhibits courage, determination, and a strong sense of responsibility as he navigates the challenges posed by the dark forces pursuing the medallion."}],
-                "sources":["source info"]}],
-  "sources":["source info"]
+                 "origin":"2012",
+                 "synopsis":"combines adventure fantasy and elements of Mayan foklore",
+                 "moral_teachings":["courage and perserverance"],
+                 "characters":[{"character_name":"Leo San Juan",
+                                "character_description":" The central protagonist of the story, Leo is a young boy who discovers the magical medallion, which grants him extraordinary powers. Throughout the film, Leo exhibits courage, determination, and a strong sense of responsibility as he navigates the challenges posed by the dark forces pursuing the medallion."}],
+                 "sources":["source info"]}]  
 }
 
 ### PUT stories_and_myths

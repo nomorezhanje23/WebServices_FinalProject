@@ -191,6 +191,8 @@ const saveStories_and_myths = (req, res, next) => {
         characters: 'required|array',
         'characters.*.character_name': 'required|string',
         'characters.*.character_description': 'required|string',
+        sources: 'required|array',
+        'sources.*': 'required|string',
         variations: 'required|array',
         'variations.*.title': 'required|string',
         'variations.*.origin': 'required|string',
@@ -201,9 +203,7 @@ const saveStories_and_myths = (req, res, next) => {
         'variations.*.characters.*.character_name': 'required|string',
         'variations.*.characters.*.character_description': 'required|string',
         'variations.*.sources': 'required|array',
-        'variations.*.sources.*': 'required|string',
-        sources: 'required|array',
-        'sources.*': 'required|string'
+        'variations.*.sources.*': 'required|string' 
     };
 
     // Use the validator function to check if the request body complies with the defined rules
