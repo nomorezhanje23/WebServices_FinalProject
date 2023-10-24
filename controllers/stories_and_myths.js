@@ -115,8 +115,8 @@ const updateStories_and_myths = async (req, res) => {
         synopsis: req.body.synopsis,
         moral_teachings: req.body.moral_teachings,
         characters: req.body.characters,
-        variations: req.body.variations,
-        source: req.body.source
+        sources: req.body.source,
+        variations: req.body.variations
     }
 
     // Use 'await' to asynchronously replace the existing document with the updated 'stories_and_myths' object
