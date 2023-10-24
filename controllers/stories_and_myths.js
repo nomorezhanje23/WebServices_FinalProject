@@ -115,7 +115,7 @@ const updateStories_and_myths = async (req, res) => {
         synopsis: req.body.synopsis,
         moral_teachings: req.body.moral_teachings,
         characters: req.body.characters,
-        sources: req.body.source,
+        sources: req.body.sources,
         variations: req.body.variations
     }
 
